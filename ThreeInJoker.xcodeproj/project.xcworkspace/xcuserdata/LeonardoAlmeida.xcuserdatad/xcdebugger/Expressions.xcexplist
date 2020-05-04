@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "GameActiveState.didEnter(from : GKState?) -&gt; ():GameActiveState.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "currentLevelNum">
+            </PersistentString>
+            <PersistentString
+               value = "levelType">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Level.detectPossibleSwaps() -&gt; ():Level.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "NumRows">
+            </PersistentString>
+            <PersistentString
+               value = "NumColumns">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GameScene.addSpritesForCookies(Set&lt;Cookie&gt;) -&gt; ():GameScene.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "sprite.position">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GameActiveState.beginGame() -&gt; ():GameActiveState.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "gameScene.level">
+            </PersistentString>
+            <PersistentString
+               value = "gameScene.movesLeft">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GameActiveState.update(deltaTime : Double) -&gt; ():GameActiveState.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "gameScene.movesLeft">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ButtonNode.init(templateNode : SKSpriteNode) -&gt; ButtonNode:ButtonNode.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "child.copy()">
+            </PersistentString>
+            <PersistentString
+               value = "position">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GameOverlayState.didEnter(from : GKState?) -&gt; ():GameOverlayState.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "overlay">
+            </PersistentString>
+            <PersistentString
+               value = "gameScene.overlay">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GameScene.addTiles() -&gt; ():GameScene.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "tileNode.size">
+            </PersistentString>
+            <PersistentString
+               value = "tileNode.position">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SelectLevelViewController.levelButtonPressed(UIButton) -&gt; ():SelectLevelViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "sender.tag">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GameSuccessState.isValidNextState(AnyObject.Type) -&gt; Bool:GameSuccessState.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "stateClass">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GameScene.overlay.didset:GameScene.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "buttons">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GameScene.animateBeginGame(() -&gt; ()) -&gt; ():GameScene.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "size">
+            </PersistentString>
+            <PersistentString
+               value = "gameLayer.position">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SceneOverlay.updateLabel(level : Int) -&gt; ():SceneOverlay.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "levelLabelNode.text">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static ButtonNode.parseButtonInNode(containerNode : SKNode) -&gt; ():ButtonNode.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = " identifier.rawValue">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GameViewController.updateLabels(targetScore : Int, movesLeft : Int, score : Int) -&gt; ():GameViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "scene.level.currentLevel()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SceneOverlay.init(overlaySceneFileName : String, zPosition : CGFloat) -&gt; SceneOverlay:SceneOverlay.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "lavelLabelNode.text">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GameOverlayState.init(gameScene : GameScene) -&gt; GameOverlayState:GameOverlayState.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "overlay.contentNode">
+            </PersistentString>
+            <PersistentString
+               value = "overlaySceneFileName">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

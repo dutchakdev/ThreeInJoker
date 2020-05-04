@@ -1,0 +1,840 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		724E503B1DA9D82A00235D93 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724E503A1DA9D82A00235D93 /* Button.swift */; };
+		724E503F1DA9E38800235D93 /* PauseScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 724E503E1DA9E38800235D93 /* PauseScene.sks */; };
+		724E50441DA9E43100235D93 /* FailureScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 724E50411DA9E43000235D93 /* FailureScene.sks */; };
+		724E50451DA9E43100235D93 /* SuccessScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 724E50431DA9E43100235D93 /* SuccessScene.sks */; };
+		724E50481DA9E77300235D93 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 724E50471DA9E77300235D93 /* GameScene.sks */; };
+		72AC47C81D9708A5003534DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AC47C71D9708A5003534DD /* AppDelegate.swift */; };
+		72AC47CC1D9708A5003534DD /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AC47CB1D9708A5003534DD /* GameScene.swift */; };
+		72AC47CE1D9708A5003534DD /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AC47CD1D9708A5003534DD /* GameViewController.swift */; };
+		72AC47D11D9708A5003534DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72AC47CF1D9708A5003534DD /* Main.storyboard */; };
+		72AC47D31D9708A6003534DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72AC47D21D9708A5003534DD /* Assets.xcassets */; };
+		72AC47D61D9708A6003534DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72AC47D41D9708A6003534DD /* LaunchScreen.storyboard */; };
+		72AC47DE1D970912003534DD /* Sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 72AC47DD1D970912003534DD /* Sprites.atlas */; };
+		72AC47E01D970B66003534DD /* Cookie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AC47DF1D970B66003534DD /* Cookie.swift */; };
+		72AC47E21D970FD7003534DD /* Array2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AC47E11D970FD7003534DD /* Array2D.swift */; };
+		72AC47E41D971182003534DD /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AC47E31D971182003534DD /* Level.swift */; };
+		72AC47E91D9714DD003534DD /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AC47E81D9714DD003534DD /* Tile.swift */; };
+		72AC47EB1D9714EC003534DD /* Swap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AC47EA1D9714EC003534DD /* Swap.swift */; };
+		72AC47ED1D9714F8003534DD /* Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AC47EC1D9714F8003534DD /* Chain.swift */; };
+		72AC47FB1D971C0E003534DD /* Level_1.json in Resources */ = {isa = PBXBuildFile; fileRef = 72AC47F61D971C0E003534DD /* Level_1.json */; };
+		72AC47FC1D971C0E003534DD /* Level_7.json in Resources */ = {isa = PBXBuildFile; fileRef = 72AC47F71D971C0E003534DD /* Level_7.json */; };
+		72AC47FD1D971C0E003534DD /* Level_11.json in Resources */ = {isa = PBXBuildFile; fileRef = 72AC47F81D971C0E003534DD /* Level_11.json */; };
+		72AC47FE1D971C0E003534DD /* Level_20.json in Resources */ = {isa = PBXBuildFile; fileRef = 72AC47F91D971C0E003534DD /* Level_20.json */; };
+		72AC47FF1D971C0E003534DD /* Level_25.json in Resources */ = {isa = PBXBuildFile; fileRef = 72AC47FA1D971C0E003534DD /* Level_25.json */; };
+		72AC48011D971CEF003534DD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AC48001D971CEF003534DD /* Extensions.swift */; };
+		72AC48091D978010003534DD /* Chomp.wav in Resources */ = {isa = PBXBuildFile; fileRef = 72AC48031D978010003534DD /* Chomp.wav */; };
+		72AC480A1D978010003534DD /* Drip.wav in Resources */ = {isa = PBXBuildFile; fileRef = 72AC48041D978010003534DD /* Drip.wav */; };
+		72AC480B1D978010003534DD /* Error.wav in Resources */ = {isa = PBXBuildFile; fileRef = 72AC48051D978010003534DD /* Error.wav */; };
+		72AC480C1D978010003534DD /* Ka-Ching.wav in Resources */ = {isa = PBXBuildFile; fileRef = 72AC48061D978010003534DD /* Ka-Ching.wav */; };
+		72AC480D1D978010003534DD /* Mining by Moonlight.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 72AC48071D978010003534DD /* Mining by Moonlight.mp3 */; };
+		72AC480E1D978010003534DD /* Scrape.wav in Resources */ = {isa = PBXBuildFile; fileRef = 72AC48081D978010003534DD /* Scrape.wav */; };
+		72AC48101D985B8F003534DD /* Grid.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 72AC480F1D985B8F003534DD /* Grid.atlas */; };
+		72AC48141D996174003534DD /* Modern Motion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 72AC48131D996174003534DD /* Modern Motion.mp3 */; };
+		72AC481C1D996219003534DD /* The Fast Route.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 72AC481B1D996219003534DD /* The Fast Route.mp3 */; };
+		72AC481E1D996224003534DD /* The Hobo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 72AC481D1D996224003534DD /* The Hobo.mp3 */; };
+		72AC48231D996916003534DD /* MenuAccept.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 72AC48211D996916003534DD /* MenuAccept.mp3 */; };
+		72AC48241D996916003534DD /* MenuDecline.wav in Resources */ = {isa = PBXBuildFile; fileRef = 72AC48221D996916003534DD /* MenuDecline.wav */; };
+		72E0183D1DA95E6B0037B468 /* SelectLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E0183C1DA95E6B0037B468 /* SelectLevelViewController.swift */; };
+		72E0183F1DA95E7F0037B468 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E0183E1DA95E7F0037B468 /* HomeScreenViewController.swift */; };
+		72E018451DA964320037B468 /* button_press.wav in Resources */ = {isa = PBXBuildFile; fileRef = 72E018441DA964320037B468 /* button_press.wav */; };
+		72E018471DA964BF0037B468 /* SKTAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E018461DA964BF0037B468 /* SKTAudio.swift */; };
+		72E018491DA967C10037B468 /* SceneOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E018481DA967C10037B468 /* SceneOverlay.swift */; };
+		72E018501DA968860037B468 /* GameActiveState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E0184B1DA968860037B468 /* GameActiveState.swift */; };
+		72E018511DA968860037B468 /* GameFailureState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E0184C1DA968860037B468 /* GameFailureState.swift */; };
+		72E018521DA968860037B468 /* GameOverlayState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E0184D1DA968860037B468 /* GameOverlayState.swift */; };
+		72E018531DA968860037B468 /* GamePauseState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E0184E1DA968860037B468 /* GamePauseState.swift */; };
+		72E018541DA968860037B468 /* GameSuccessState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E0184F1DA968860037B468 /* GameSuccessState.swift */; };
+		72E018561DA968F90037B468 /* ButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E018551DA968F90037B468 /* ButtonNode.swift */; };
+		72E018581DA9712A0037B468 /* Level.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 72E018571DA9712A0037B468 /* Level.atlas */; };
+		72F7C2A81DAA9848005D86D1 /* GameScene+Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F7C2A71DAA9848005D86D1 /* GameScene+Buttons.swift */; };
+		9A261D7D23A0DEAF00CC5D89 /* GameOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A261D7A23A0DEAE00CC5D89 /* GameOverViewController.swift */; };
+		9A261D7E23A0DEAF00CC5D89 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A261D7B23A0DEAE00CC5D89 /* LoadingViewController.swift */; };
+		9A261D7F23A0DEAF00CC5D89 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A261D7C23A0DEAF00CC5D89 /* MenuViewController.swift */; };
+		9A261D8A23A0E5D500CC5D89 /* InitConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A261D8223A0E5D400CC5D89 /* InitConstants.swift */; };
+		9A261D8D23A0E5D500CC5D89 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A261D8523A0E5D400CC5D89 /* Keychain.swift */; };
+		9A261D8E23A0E5D500CC5D89 /* LevelController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A261D8723A0E5D500CC5D89 /* LevelController.xib */; };
+		9A261D8F23A0E5D500CC5D89 /* LevelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A261D8823A0E5D500CC5D89 /* LevelController.swift */; };
+		9A7D63DB23BD5B220003A2F2 /* AdManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7D63D823BD5B220003A2F2 /* AdManager.swift */; };
+		9A7D63DC23BD5B220003A2F2 /* AdSettingsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7D63D923BD5B220003A2F2 /* AdSettingsStorage.swift */; };
+		9A7D63DD23BD5B220003A2F2 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7D63DA23BD5B220003A2F2 /* APIManager.swift */; };
+		9A7D63E223BD5B4D0003A2F2 /* LocalPushManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7D63DF23BD5B4D0003A2F2 /* LocalPushManager.swift */; };
+		9A7D63E323BD5B4D0003A2F2 /* VibrationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7D63E023BD5B4D0003A2F2 /* VibrationManager.swift */; };
+		9A7D63E423BD5B4D0003A2F2 /* SettingsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7D63E123BD5B4D0003A2F2 /* SettingsStorage.swift */; };
+		9AAA76A523ABC8890028B3B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9AAA76A423ABC8890028B3B4 /* GoogleService-Info.plist */; };
+		9ACCE97823A12FE90013E20D /* Fire.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9ACCE97723A12FE90013E20D /* Fire.sks */; };
+		9ACCE97A23A13E890013E20D /* fire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9ACCE97923A13E880013E20D /* fire.mp3 */; };
+		9ACCE97E23A13FA00013E20D /* Karibu Watu Wangu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9ACCE97D23A13FA00013E20D /* Karibu Watu Wangu.mp3 */; };
+		9ACCE98623A14D300013E20D /* Level_2.json in Resources */ = {isa = PBXBuildFile; fileRef = 9ACCE98123A14CD20013E20D /* Level_2.json */; };
+		9ACCE98723A14D300013E20D /* Level_3.json in Resources */ = {isa = PBXBuildFile; fileRef = 9ACCE98223A14CE40013E20D /* Level_3.json */; };
+		9ACCE98823A14D300013E20D /* Level_4.json in Resources */ = {isa = PBXBuildFile; fileRef = 9ACCE98323A14CF50013E20D /* Level_4.json */; };
+		9ACCE98923A14D300013E20D /* Level_5.json in Resources */ = {isa = PBXBuildFile; fileRef = 9ACCE98423A14D160013E20D /* Level_5.json */; };
+		9ACCE98A23A14D4F0013E20D /* Level_6.json in Resources */ = {isa = PBXBuildFile; fileRef = 9ACCE98523A14D250013E20D /* Level_6.json */; };
+		9ACCE98C23A14D610013E20D /* Level_8.json in Resources */ = {isa = PBXBuildFile; fileRef = 9ACCE98B23A14D550013E20D /* Level_8.json */; };
+		9ACCE98E23A14D740013E20D /* Level_9.json in Resources */ = {isa = PBXBuildFile; fileRef = 9ACCE98D23A14D670013E20D /* Level_9.json */; };
+		9ACCE99023A14D8B0013E20D /* Level_10.json in Resources */ = {isa = PBXBuildFile; fileRef = 9ACCE98F23A14D7E0013E20D /* Level_10.json */; };
+		9ACCE99923A14DFB0013E20D /* Level_12.json in Resources */ = {isa = PBXBuildFile; fileRef = 9ACCE99123A14D910013E20D /* Level_12.json */; };
+		9ACCE99A23A14DFB0013E20D /* Level_13.json in Resources */ = {isa = PBXBuildFile; fileRef = 9ACCE99223A14D970013E20D /* Level_13.json */; };
+		9ACCE99B23A14DFB0013E20D /* Level_14.json in Resources */ = {isa = PBXBuildFile; fileRef = 9ACCE99323A14D9E0013E20D /* Level_14.json */; };
+		9ACCE99C23A14DFB0013E20D /* Level_15.json in Resources */ = {isa = PBXBuildFile; fileRef = 9ACCE99423A14DA40013E20D /* Level_15.json */; };
+		9ACCE99D23A14DFB0013E20D /* Level_16.json in Resources */ = {isa = PBXBuildFile; fileRef = 9ACCE99523A14DAA0013E20D /* Level_16.json */; };
+		9ACCE99E23A14DFB0013E20D /* Level_17.json in Resources */ = {isa = PBXBuildFile; fileRef = 9ACCE99623A14DB00013E20D /* Level_17.json */; };
+		9ACCE9A423A180250013E20D /* Level_21.json in Resources */ = {isa = PBXBuildFile; fileRef = 9ACCE99723A14DF50013E20D /* Level_21.json */; };
+		9ACCE9A523A180250013E20D /* Level_22.json in Resources */ = {isa = PBXBuildFile; fileRef = 9ACCE99823A14DF80013E20D /* Level_22.json */; };
+		9ACCE9A623A180250013E20D /* Level_23.json in Resources */ = {isa = PBXBuildFile; fileRef = 9ACCE99F23A14E080013E20D /* Level_23.json */; };
+		9ACCE9A723A180250013E20D /* Level_24.json in Resources */ = {isa = PBXBuildFile; fileRef = 9ACCE9A023A14E0E0013E20D /* Level_24.json */; };
+		9AFB9F5923ACEEDA007A216D /* RemoteConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFB9F5823ACEEDA007A216D /* RemoteConfigManager.swift */; };
+		AAC06C9A44592FE9890A6EE3 /* Pods_ThreeInJoker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7574BFAB4E0055B5D1E39F9 /* Pods_ThreeInJoker.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		724E503A1DA9D82A00235D93 /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		724E503E1DA9E38800235D93 /* PauseScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = PauseScene.sks; sourceTree = "<group>"; };
+		724E50411DA9E43000235D93 /* FailureScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FailureScene.sks; sourceTree = "<group>"; };
+		724E50431DA9E43100235D93 /* SuccessScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SuccessScene.sks; sourceTree = "<group>"; };
+		724E50471DA9E77300235D93 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		72AC47C41D9708A5003534DD /* Three In Joker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Three In Joker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		72AC47C71D9708A5003534DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		72AC47CB1D9708A5003534DD /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		72AC47CD1D9708A5003534DD /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		72AC47D01D9708A5003534DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		72AC47D21D9708A5003534DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		72AC47D51D9708A6003534DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		72AC47D71D9708A6003534DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72AC47DD1D970912003534DD /* Sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Sprites.atlas; sourceTree = "<group>"; };
+		72AC47DF1D970B66003534DD /* Cookie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cookie.swift; sourceTree = "<group>"; };
+		72AC47E11D970FD7003534DD /* Array2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array2D.swift; sourceTree = "<group>"; };
+		72AC47E31D971182003534DD /* Level.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
+		72AC47E81D9714DD003534DD /* Tile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
+		72AC47EA1D9714EC003534DD /* Swap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swap.swift; sourceTree = "<group>"; };
+		72AC47EC1D9714F8003534DD /* Chain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chain.swift; sourceTree = "<group>"; };
+		72AC47F61D971C0E003534DD /* Level_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_1.json; sourceTree = "<group>"; };
+		72AC47F71D971C0E003534DD /* Level_7.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_7.json; sourceTree = "<group>"; };
+		72AC47F81D971C0E003534DD /* Level_11.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_11.json; sourceTree = "<group>"; };
+		72AC47F91D971C0E003534DD /* Level_20.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_20.json; sourceTree = "<group>"; };
+		72AC47FA1D971C0E003534DD /* Level_25.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_25.json; sourceTree = "<group>"; };
+		72AC48001D971CEF003534DD /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		72AC48031D978010003534DD /* Chomp.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Chomp.wav; sourceTree = "<group>"; };
+		72AC48041D978010003534DD /* Drip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Drip.wav; sourceTree = "<group>"; };
+		72AC48051D978010003534DD /* Error.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Error.wav; sourceTree = "<group>"; };
+		72AC48061D978010003534DD /* Ka-Ching.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Ka-Ching.wav"; sourceTree = "<group>"; };
+		72AC48071D978010003534DD /* Mining by Moonlight.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Mining by Moonlight.mp3"; sourceTree = "<group>"; };
+		72AC48081D978010003534DD /* Scrape.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Scrape.wav; sourceTree = "<group>"; };
+		72AC480F1D985B8F003534DD /* Grid.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Grid.atlas; sourceTree = "<group>"; };
+		72AC48131D996174003534DD /* Modern Motion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Modern Motion.mp3"; sourceTree = "<group>"; };
+		72AC481B1D996219003534DD /* The Fast Route.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The Fast Route.mp3"; sourceTree = "<group>"; };
+		72AC481D1D996224003534DD /* The Hobo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The Hobo.mp3"; sourceTree = "<group>"; };
+		72AC48211D996916003534DD /* MenuAccept.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MenuAccept.mp3; sourceTree = "<group>"; };
+		72AC48221D996916003534DD /* MenuDecline.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = MenuDecline.wav; sourceTree = "<group>"; };
+		72E0183C1DA95E6B0037B468 /* SelectLevelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectLevelViewController.swift; sourceTree = "<group>"; };
+		72E0183E1DA95E7F0037B468 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+		72E018441DA964320037B468 /* button_press.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = button_press.wav; sourceTree = "<group>"; };
+		72E018461DA964BF0037B468 /* SKTAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKTAudio.swift; sourceTree = "<group>"; };
+		72E018481DA967C10037B468 /* SceneOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneOverlay.swift; sourceTree = "<group>"; };
+		72E0184B1DA968860037B468 /* GameActiveState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameActiveState.swift; sourceTree = "<group>"; };
+		72E0184C1DA968860037B468 /* GameFailureState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameFailureState.swift; sourceTree = "<group>"; };
+		72E0184D1DA968860037B468 /* GameOverlayState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverlayState.swift; sourceTree = "<group>"; };
+		72E0184E1DA968860037B468 /* GamePauseState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamePauseState.swift; sourceTree = "<group>"; };
+		72E0184F1DA968860037B468 /* GameSuccessState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSuccessState.swift; sourceTree = "<group>"; };
+		72E018551DA968F90037B468 /* ButtonNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonNode.swift; sourceTree = "<group>"; };
+		72E018571DA9712A0037B468 /* Level.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Level.atlas; sourceTree = "<group>"; };
+		72F7C2A71DAA9848005D86D1 /* GameScene+Buttons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GameScene+Buttons.swift"; sourceTree = "<group>"; };
+		9A261D7A23A0DEAE00CC5D89 /* GameOverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverViewController.swift; sourceTree = "<group>"; };
+		9A261D7B23A0DEAE00CC5D89 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		9A261D7C23A0DEAF00CC5D89 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		9A261D8223A0E5D400CC5D89 /* InitConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitConstants.swift; sourceTree = "<group>"; };
+		9A261D8523A0E5D400CC5D89 /* Keychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
+		9A261D8723A0E5D500CC5D89 /* LevelController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LevelController.xib; sourceTree = "<group>"; };
+		9A261D8823A0E5D500CC5D89 /* LevelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelController.swift; sourceTree = "<group>"; };
+		9A7D63D823BD5B220003A2F2 /* AdManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdManager.swift; sourceTree = "<group>"; };
+		9A7D63D923BD5B220003A2F2 /* AdSettingsStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdSettingsStorage.swift; sourceTree = "<group>"; };
+		9A7D63DA23BD5B220003A2F2 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		9A7D63DF23BD5B4D0003A2F2 /* LocalPushManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalPushManager.swift; sourceTree = "<group>"; };
+		9A7D63E023BD5B4D0003A2F2 /* VibrationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VibrationManager.swift; sourceTree = "<group>"; };
+		9A7D63E123BD5B4D0003A2F2 /* SettingsStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsStorage.swift; sourceTree = "<group>"; };
+		9AAA76A423ABC8890028B3B4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9ACCE97723A12FE90013E20D /* Fire.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Fire.sks; sourceTree = "<group>"; };
+		9ACCE97923A13E880013E20D /* fire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fire.mp3; sourceTree = "<group>"; };
+		9ACCE97D23A13FA00013E20D /* Karibu Watu Wangu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Karibu Watu Wangu.mp3"; sourceTree = "<group>"; };
+		9ACCE98123A14CD20013E20D /* Level_2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Level_2.json; sourceTree = "<group>"; };
+		9ACCE98223A14CE40013E20D /* Level_3.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Level_3.json; sourceTree = "<group>"; };
+		9ACCE98323A14CF50013E20D /* Level_4.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Level_4.json; sourceTree = "<group>"; };
+		9ACCE98423A14D160013E20D /* Level_5.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Level_5.json; sourceTree = "<group>"; };
+		9ACCE98523A14D250013E20D /* Level_6.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Level_6.json; sourceTree = "<group>"; };
+		9ACCE98B23A14D550013E20D /* Level_8.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Level_8.json; sourceTree = "<group>"; };
+		9ACCE98D23A14D670013E20D /* Level_9.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Level_9.json; sourceTree = "<group>"; };
+		9ACCE98F23A14D7E0013E20D /* Level_10.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Level_10.json; sourceTree = "<group>"; };
+		9ACCE99123A14D910013E20D /* Level_12.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Level_12.json; sourceTree = "<group>"; };
+		9ACCE99223A14D970013E20D /* Level_13.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Level_13.json; sourceTree = "<group>"; };
+		9ACCE99323A14D9E0013E20D /* Level_14.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Level_14.json; sourceTree = "<group>"; };
+		9ACCE99423A14DA40013E20D /* Level_15.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Level_15.json; sourceTree = "<group>"; };
+		9ACCE99523A14DAA0013E20D /* Level_16.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Level_16.json; sourceTree = "<group>"; };
+		9ACCE99623A14DB00013E20D /* Level_17.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Level_17.json; sourceTree = "<group>"; };
+		9ACCE99723A14DF50013E20D /* Level_21.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Level_21.json; sourceTree = "<group>"; };
+		9ACCE99823A14DF80013E20D /* Level_22.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Level_22.json; sourceTree = "<group>"; };
+		9ACCE99F23A14E080013E20D /* Level_23.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Level_23.json; sourceTree = "<group>"; };
+		9ACCE9A023A14E0E0013E20D /* Level_24.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Level_24.json; sourceTree = "<group>"; };
+		9ACCE9A323A172980013E20D /* Three In Joker HD.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Three In Joker HD.entitlements"; sourceTree = "<group>"; };
+		9AFB9F5823ACEEDA007A216D /* RemoteConfigManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteConfigManager.swift; sourceTree = "<group>"; };
+		B815E7FE09078F7A659F8D9F /* Pods-ThreeInJoker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreeInJoker.release.xcconfig"; path = "Target Support Files/Pods-ThreeInJoker/Pods-ThreeInJoker.release.xcconfig"; sourceTree = "<group>"; };
+		C7574BFAB4E0055B5D1E39F9 /* Pods_ThreeInJoker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThreeInJoker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D97DDBBD2B13295D7F80932B /* Pods-ThreeInJoker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThreeInJoker.debug.xcconfig"; path = "Target Support Files/Pods-ThreeInJoker/Pods-ThreeInJoker.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		72AC47C11D9708A5003534DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAC06C9A44592FE9890A6EE3 /* Pods_ThreeInJoker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3954308506C1B90B7844051C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D97DDBBD2B13295D7F80932B /* Pods-ThreeInJoker.debug.xcconfig */,
+				B815E7FE09078F7A659F8D9F /* Pods-ThreeInJoker.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5BD57E7C86C0AD5EB1F7F807 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7574BFAB4E0055B5D1E39F9 /* Pods_ThreeInJoker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		724E50401DA9E43000235D93 /* FailureScene */ = {
+			isa = PBXGroup;
+			children = (
+				724E50411DA9E43000235D93 /* FailureScene.sks */,
+			);
+			name = FailureScene;
+			path = ../FailureScene;
+			sourceTree = "<group>";
+		};
+		724E50421DA9E43000235D93 /* SuccessScene */ = {
+			isa = PBXGroup;
+			children = (
+				724E50431DA9E43100235D93 /* SuccessScene.sks */,
+			);
+			name = SuccessScene;
+			path = ../SuccessScene;
+			sourceTree = "<group>";
+		};
+		724E50461DA9E43E00235D93 /* PauseScene */ = {
+			isa = PBXGroup;
+			children = (
+				724E503E1DA9E38800235D93 /* PauseScene.sks */,
+			);
+			name = PauseScene;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		72AC47BB1D9708A5003534DD = {
+			isa = PBXGroup;
+			children = (
+				72AC47C61D9708A5003534DD /* ThreeInJoker */,
+				72AC47C51D9708A5003534DD /* Products */,
+				3954308506C1B90B7844051C /* Pods */,
+				5BD57E7C86C0AD5EB1F7F807 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		72AC47C51D9708A5003534DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				72AC47C41D9708A5003534DD /* Three In Joker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		72AC47C61D9708A5003534DD /* ThreeInJoker */ = {
+			isa = PBXGroup;
+			children = (
+				9ACCE9A323A172980013E20D /* Three In Joker HD.entitlements */,
+				9A261D8623A0E5D500CC5D89 /* UIComponents */,
+				9A261D8023A0E5D400CC5D89 /* Utils */,
+				9A7D63DE23BD5B4D0003A2F2 /* AppManagers */,
+				72AC480F1D985B8F003534DD /* Grid.atlas */,
+				72AC48021D978010003534DD /* Sounds */,
+				72AC47F51D971C0E003534DD /* Levels */,
+				72AC47EE1D97151A003534DD /* Utils */,
+				72AC47E71D9714A2003534DD /* Controllers */,
+				72AC47E61D97149B003534DD /* scenes */,
+				72AC47E51D971494003534DD /* Models */,
+				72AC47DD1D970912003534DD /* Sprites.atlas */,
+				72AC47C71D9708A5003534DD /* AppDelegate.swift */,
+				72E018571DA9712A0037B468 /* Level.atlas */,
+				72AC47CF1D9708A5003534DD /* Main.storyboard */,
+				72AC47D21D9708A5003534DD /* Assets.xcassets */,
+				72AC47D41D9708A6003534DD /* LaunchScreen.storyboard */,
+				72AC47D71D9708A6003534DD /* Info.plist */,
+				9AAA76A423ABC8890028B3B4 /* GoogleService-Info.plist */,
+			);
+			path = ThreeInJoker;
+			sourceTree = "<group>";
+		};
+		72AC47E51D971494003534DD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				72AC47DF1D970B66003534DD /* Cookie.swift */,
+				72AC47E31D971182003534DD /* Level.swift */,
+				72AC48001D971CEF003534DD /* Extensions.swift */,
+				72AC47E81D9714DD003534DD /* Tile.swift */,
+				72AC47EA1D9714EC003534DD /* Swap.swift */,
+				72AC47EC1D9714F8003534DD /* Chain.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		72AC47E61D97149B003534DD /* scenes */ = {
+			isa = PBXGroup;
+			children = (
+				72E0184A1DA968860037B468 /* GameStates */,
+				72E018481DA967C10037B468 /* SceneOverlay.swift */,
+				724E50471DA9E77300235D93 /* GameScene.sks */,
+				72F7C2A71DAA9848005D86D1 /* GameScene+Buttons.swift */,
+				72AC47CB1D9708A5003534DD /* GameScene.swift */,
+				9ACCE97723A12FE90013E20D /* Fire.sks */,
+			);
+			name = scenes;
+			sourceTree = "<group>";
+		};
+		72AC47E71D9714A2003534DD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				72E0183E1DA95E7F0037B468 /* HomeScreenViewController.swift */,
+				72E0183C1DA95E6B0037B468 /* SelectLevelViewController.swift */,
+				72AC47CD1D9708A5003534DD /* GameViewController.swift */,
+				9A261D7A23A0DEAE00CC5D89 /* GameOverViewController.swift */,
+				9A261D7B23A0DEAE00CC5D89 /* LoadingViewController.swift */,
+				9A261D7C23A0DEAF00CC5D89 /* MenuViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		72AC47EE1D97151A003534DD /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				724E503A1DA9D82A00235D93 /* Button.swift */,
+				72E018551DA968F90037B468 /* ButtonNode.swift */,
+				72E018461DA964BF0037B468 /* SKTAudio.swift */,
+				72AC47E11D970FD7003534DD /* Array2D.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		72AC47F51D971C0E003534DD /* Levels */ = {
+			isa = PBXGroup;
+			children = (
+				72AC47F61D971C0E003534DD /* Level_1.json */,
+				9ACCE98123A14CD20013E20D /* Level_2.json */,
+				9ACCE98223A14CE40013E20D /* Level_3.json */,
+				9ACCE98323A14CF50013E20D /* Level_4.json */,
+				9ACCE98423A14D160013E20D /* Level_5.json */,
+				9ACCE98523A14D250013E20D /* Level_6.json */,
+				72AC47F71D971C0E003534DD /* Level_7.json */,
+				9ACCE98B23A14D550013E20D /* Level_8.json */,
+				9ACCE98D23A14D670013E20D /* Level_9.json */,
+				9ACCE98F23A14D7E0013E20D /* Level_10.json */,
+				72AC47F81D971C0E003534DD /* Level_11.json */,
+				9ACCE99123A14D910013E20D /* Level_12.json */,
+				9ACCE99223A14D970013E20D /* Level_13.json */,
+				9ACCE99323A14D9E0013E20D /* Level_14.json */,
+				9ACCE99423A14DA40013E20D /* Level_15.json */,
+				9ACCE99523A14DAA0013E20D /* Level_16.json */,
+				9ACCE99623A14DB00013E20D /* Level_17.json */,
+				72AC47F91D971C0E003534DD /* Level_20.json */,
+				9ACCE99723A14DF50013E20D /* Level_21.json */,
+				9ACCE99823A14DF80013E20D /* Level_22.json */,
+				9ACCE99F23A14E080013E20D /* Level_23.json */,
+				9ACCE9A023A14E0E0013E20D /* Level_24.json */,
+				72AC47FA1D971C0E003534DD /* Level_25.json */,
+			);
+			path = Levels;
+			sourceTree = "<group>";
+		};
+		72AC48021D978010003534DD /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				9ACCE97D23A13FA00013E20D /* Karibu Watu Wangu.mp3 */,
+				9ACCE97923A13E880013E20D /* fire.mp3 */,
+				72E018441DA964320037B468 /* button_press.wav */,
+				72AC48211D996916003534DD /* MenuAccept.mp3 */,
+				72AC48221D996916003534DD /* MenuDecline.wav */,
+				72AC48131D996174003534DD /* Modern Motion.mp3 */,
+				72AC481B1D996219003534DD /* The Fast Route.mp3 */,
+				72AC48031D978010003534DD /* Chomp.wav */,
+				72AC48041D978010003534DD /* Drip.wav */,
+				72AC48051D978010003534DD /* Error.wav */,
+				72AC481D1D996224003534DD /* The Hobo.mp3 */,
+				72AC48061D978010003534DD /* Ka-Ching.wav */,
+				72AC48071D978010003534DD /* Mining by Moonlight.mp3 */,
+				72AC48081D978010003534DD /* Scrape.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		72E0184A1DA968860037B468 /* GameStates */ = {
+			isa = PBXGroup;
+			children = (
+				724E50461DA9E43E00235D93 /* PauseScene */,
+				724E50401DA9E43000235D93 /* FailureScene */,
+				724E50421DA9E43000235D93 /* SuccessScene */,
+				72E0184B1DA968860037B468 /* GameActiveState.swift */,
+				72E0184C1DA968860037B468 /* GameFailureState.swift */,
+				72E0184D1DA968860037B468 /* GameOverlayState.swift */,
+				72E0184E1DA968860037B468 /* GamePauseState.swift */,
+				72E0184F1DA968860037B468 /* GameSuccessState.swift */,
+			);
+			path = GameStates;
+			sourceTree = "<group>";
+		};
+		9A261D8023A0E5D400CC5D89 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9A7D63D823BD5B220003A2F2 /* AdManager.swift */,
+				9A7D63D923BD5B220003A2F2 /* AdSettingsStorage.swift */,
+				9A7D63DA23BD5B220003A2F2 /* APIManager.swift */,
+				9A261D8223A0E5D400CC5D89 /* InitConstants.swift */,
+				9AFB9F5823ACEEDA007A216D /* RemoteConfigManager.swift */,
+				9A261D8523A0E5D400CC5D89 /* Keychain.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		9A261D8623A0E5D500CC5D89 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				9A261D8723A0E5D500CC5D89 /* LevelController.xib */,
+				9A261D8823A0E5D500CC5D89 /* LevelController.swift */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		9A7D63DE23BD5B4D0003A2F2 /* AppManagers */ = {
+			isa = PBXGroup;
+			children = (
+				9A7D63DF23BD5B4D0003A2F2 /* LocalPushManager.swift */,
+				9A7D63E023BD5B4D0003A2F2 /* VibrationManager.swift */,
+				9A7D63E123BD5B4D0003A2F2 /* SettingsStorage.swift */,
+			);
+			path = AppManagers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		72AC47C31D9708A5003534DD /* ThreeInJoker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72AC47DA1D9708A6003534DD /* Build configuration list for PBXNativeTarget "ThreeInJoker" */;
+			buildPhases = (
+				407C4B52E28AF2D2392089D6 /* [CP] Check Pods Manifest.lock */,
+				72AC47C01D9708A5003534DD /* Sources */,
+				72AC47C11D9708A5003534DD /* Frameworks */,
+				72AC47C21D9708A5003534DD /* Resources */,
+				CB5AE33EA9E156004E333E91 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ThreeInJoker;
+			productName = BiscuitCrunch;
+			productReference = 72AC47C41D9708A5003534DD /* Three In Joker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		72AC47BC1D9708A5003534DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = ThreeInJoker;
+				TargetAttributes = {
+					72AC47C31D9708A5003534DD = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = YXKLDNY466;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 72AC47BF1D9708A5003534DD /* Build configuration list for PBXProject "ThreeInJoker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 72AC47BB1D9708A5003534DD;
+			productRefGroup = 72AC47C51D9708A5003534DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				72AC47C31D9708A5003534DD /* ThreeInJoker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		72AC47C21D9708A5003534DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72AC48231D996916003534DD /* MenuAccept.mp3 in Resources */,
+				9ACCE98A23A14D4F0013E20D /* Level_6.json in Resources */,
+				9ACCE98723A14D300013E20D /* Level_3.json in Resources */,
+				9ACCE99D23A14DFB0013E20D /* Level_16.json in Resources */,
+				9ACCE98C23A14D610013E20D /* Level_8.json in Resources */,
+				72AC47D61D9708A6003534DD /* LaunchScreen.storyboard in Resources */,
+				724E50441DA9E43100235D93 /* FailureScene.sks in Resources */,
+				724E50451DA9E43100235D93 /* SuccessScene.sks in Resources */,
+				9ACCE9A623A180250013E20D /* Level_23.json in Resources */,
+				9ACCE99923A14DFB0013E20D /* Level_12.json in Resources */,
+				9ACCE99A23A14DFB0013E20D /* Level_13.json in Resources */,
+				72AC480A1D978010003534DD /* Drip.wav in Resources */,
+				72AC47FF1D971C0E003534DD /* Level_25.json in Resources */,
+				9ACCE97E23A13FA00013E20D /* Karibu Watu Wangu.mp3 in Resources */,
+				72AC48101D985B8F003534DD /* Grid.atlas in Resources */,
+				72AC480B1D978010003534DD /* Error.wav in Resources */,
+				72AC47FD1D971C0E003534DD /* Level_11.json in Resources */,
+				9ACCE98923A14D300013E20D /* Level_5.json in Resources */,
+				9AAA76A523ABC8890028B3B4 /* GoogleService-Info.plist in Resources */,
+				72AC481E1D996224003534DD /* The Hobo.mp3 in Resources */,
+				72E018581DA9712A0037B468 /* Level.atlas in Resources */,
+				9ACCE98823A14D300013E20D /* Level_4.json in Resources */,
+				72AC480E1D978010003534DD /* Scrape.wav in Resources */,
+				9ACCE9A723A180250013E20D /* Level_24.json in Resources */,
+				72AC47FB1D971C0E003534DD /* Level_1.json in Resources */,
+				72AC48091D978010003534DD /* Chomp.wav in Resources */,
+				9ACCE98E23A14D740013E20D /* Level_9.json in Resources */,
+				9ACCE99B23A14DFB0013E20D /* Level_14.json in Resources */,
+				724E503F1DA9E38800235D93 /* PauseScene.sks in Resources */,
+				72AC480D1D978010003534DD /* Mining by Moonlight.mp3 in Resources */,
+				9ACCE9A423A180250013E20D /* Level_21.json in Resources */,
+				72AC47D31D9708A6003534DD /* Assets.xcassets in Resources */,
+				72AC480C1D978010003534DD /* Ka-Ching.wav in Resources */,
+				72AC47D11D9708A5003534DD /* Main.storyboard in Resources */,
+				72AC47FC1D971C0E003534DD /* Level_7.json in Resources */,
+				9ACCE9A523A180250013E20D /* Level_22.json in Resources */,
+				9A261D8E23A0E5D500CC5D89 /* LevelController.xib in Resources */,
+				9ACCE99E23A14DFB0013E20D /* Level_17.json in Resources */,
+				724E50481DA9E77300235D93 /* GameScene.sks in Resources */,
+				72AC48241D996916003534DD /* MenuDecline.wav in Resources */,
+				72E018451DA964320037B468 /* button_press.wav in Resources */,
+				72AC47FE1D971C0E003534DD /* Level_20.json in Resources */,
+				72AC48141D996174003534DD /* Modern Motion.mp3 in Resources */,
+				9ACCE97A23A13E890013E20D /* fire.mp3 in Resources */,
+				9ACCE97823A12FE90013E20D /* Fire.sks in Resources */,
+				9ACCE99023A14D8B0013E20D /* Level_10.json in Resources */,
+				9ACCE98623A14D300013E20D /* Level_2.json in Resources */,
+				72AC47DE1D970912003534DD /* Sprites.atlas in Resources */,
+				9ACCE99C23A14DFB0013E20D /* Level_15.json in Resources */,
+				72AC481C1D996219003534DD /* The Fast Route.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		407C4B52E28AF2D2392089D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ThreeInJoker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB5AE33EA9E156004E333E91 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ThreeInJoker/Pods-ThreeInJoker-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ThreeInJoker/Pods-ThreeInJoker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		72AC47C01D9708A5003534DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A7D63DD23BD5B220003A2F2 /* APIManager.swift in Sources */,
+				72E018531DA968860037B468 /* GamePauseState.swift in Sources */,
+				72AC47EB1D9714EC003534DD /* Swap.swift in Sources */,
+				9A7D63E423BD5B4D0003A2F2 /* SettingsStorage.swift in Sources */,
+				72AC47E41D971182003534DD /* Level.swift in Sources */,
+				72AC47CC1D9708A5003534DD /* GameScene.swift in Sources */,
+				9A261D8F23A0E5D500CC5D89 /* LevelController.swift in Sources */,
+				72E018501DA968860037B468 /* GameActiveState.swift in Sources */,
+				9A7D63DB23BD5B220003A2F2 /* AdManager.swift in Sources */,
+				72AC47ED1D9714F8003534DD /* Chain.swift in Sources */,
+				72E018511DA968860037B468 /* GameFailureState.swift in Sources */,
+				9AFB9F5923ACEEDA007A216D /* RemoteConfigManager.swift in Sources */,
+				72AC47E01D970B66003534DD /* Cookie.swift in Sources */,
+				72E018471DA964BF0037B468 /* SKTAudio.swift in Sources */,
+				72F7C2A81DAA9848005D86D1 /* GameScene+Buttons.swift in Sources */,
+				72E018521DA968860037B468 /* GameOverlayState.swift in Sources */,
+				9A261D7E23A0DEAF00CC5D89 /* LoadingViewController.swift in Sources */,
+				72E0183F1DA95E7F0037B468 /* HomeScreenViewController.swift in Sources */,
+				9A7D63DC23BD5B220003A2F2 /* AdSettingsStorage.swift in Sources */,
+				72E018561DA968F90037B468 /* ButtonNode.swift in Sources */,
+				72E018541DA968860037B468 /* GameSuccessState.swift in Sources */,
+				9A7D63E223BD5B4D0003A2F2 /* LocalPushManager.swift in Sources */,
+				9A261D8A23A0E5D500CC5D89 /* InitConstants.swift in Sources */,
+				72AC48011D971CEF003534DD /* Extensions.swift in Sources */,
+				9A261D7F23A0DEAF00CC5D89 /* MenuViewController.swift in Sources */,
+				72E0183D1DA95E6B0037B468 /* SelectLevelViewController.swift in Sources */,
+				72AC47E91D9714DD003534DD /* Tile.swift in Sources */,
+				9A7D63E323BD5B4D0003A2F2 /* VibrationManager.swift in Sources */,
+				72AC47CE1D9708A5003534DD /* GameViewController.swift in Sources */,
+				72E018491DA967C10037B468 /* SceneOverlay.swift in Sources */,
+				9A261D7D23A0DEAF00CC5D89 /* GameOverViewController.swift in Sources */,
+				72AC47C81D9708A5003534DD /* AppDelegate.swift in Sources */,
+				72AC47E21D970FD7003534DD /* Array2D.swift in Sources */,
+				724E503B1DA9D82A00235D93 /* Button.swift in Sources */,
+				9A261D8D23A0E5D500CC5D89 /* Keychain.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		72AC47CF1D9708A5003534DD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72AC47D01D9708A5003534DD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		72AC47D41D9708A6003534DD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72AC47D51D9708A6003534DD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		72AC47D81D9708A6003534DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		72AC47D91D9708A6003534DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		72AC47DB1D9708A6003534DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D97DDBBD2B13295D7F80932B /* Pods-ThreeInJoker.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "ThreeInJoker/Three In Joker HD.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YXKLDNY466;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = ThreeInJoker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.three.jok;
+				PRODUCT_NAME = "Three In Joker";
+				PROVISIONING_PROFILE_SPECIFIER = ThreeInJokerDistrProvisionProfile;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		72AC47DC1D9708A6003534DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B815E7FE09078F7A659F8D9F /* Pods-ThreeInJoker.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "ThreeInJoker/Three In Joker HD.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YXKLDNY466;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = ThreeInJoker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.three.jok;
+				PRODUCT_NAME = "Three In Joker";
+				PROVISIONING_PROFILE_SPECIFIER = ThreeInJokerDistrProvisionProfile;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		72AC47BF1D9708A5003534DD /* Build configuration list for PBXProject "ThreeInJoker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72AC47D81D9708A6003534DD /* Debug */,
+				72AC47D91D9708A6003534DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72AC47DA1D9708A6003534DD /* Build configuration list for PBXNativeTarget "ThreeInJoker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72AC47DB1D9708A6003534DD /* Debug */,
+				72AC47DC1D9708A6003534DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 72AC47BC1D9708A5003534DD /* Project object */;
+}

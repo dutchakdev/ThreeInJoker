@@ -1,0 +1,6 @@
+framework module Pods_ThreeInJoker {
+  umbrella header "Pods-ThreeInJoker-umbrella.h"
+
+  export *
+  module * { export * }
+}
